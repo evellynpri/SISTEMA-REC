@@ -1,0 +1,133 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #009c3b, #ffdf00);
+  margin: 0;
+  padding: 32px;
+}
+
+/* Área principal */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #002776;
+  margin-bottom: 24px;
+}
+
+/* Organiza campo e botão */
+form {
+  display: flex;
+  gap: 10px;
+}
+
+/* Campo de entrada */
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #009c3b;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #002776;
+}
+
+/* Botões */
+button {
+  padding: 10px 16px;
+  background-color: #009c3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #007a2f;
+}
+
+/* Mensagem exibida pelo JavaScript */
+#mensagem {
+  min-height: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #002776;
+}
+
+/* Contadores */
+p {
+  font-weight: bold;
+  color: #002776;
+}
+
+#contador {
+  background-color: #002776;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.contador-concluidas {
+  margin-top: 8px;
+}
+
+#concluidas {
+  background-color: #009c3b;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+/* Remove o recuo padrão da lista */
+ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Organiza cada tarefa */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  padding: 12px;
+  background: #f8f8f8;
+  border-left: 6px solid #ffdf00;
+  border-radius: 8px;
+  list-style: none;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #eaf7ed;
+}
+
+/* Aparência da tarefa concluída */
+.concluida {
+  color: #666;
+  text-decoration: line-through;
+  background: #d9f2e3;
+}
+
+/* Botão Remover */
+li button {
+  background-color: #c62828;
+}
+
+li button:hover {
+  background-color: #a61f1f;
+}

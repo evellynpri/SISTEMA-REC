@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cadastro de Tarefas</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Cadastro de Tarefas</h1>
+
+    <form id="formulario">
+      <input id="tarefa" type="text" placeholder="Nova tarefa">
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <p>
+      Total de tarefas:
+      <span id="contador">0</span>
+    </p>
+
+    <p class="contador-concluidas">
+      Tarefas concluídas:
+      <span id="concluidas">0</span>
+    </p>
+
+    <ul id="lista"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
