@@ -4,7 +4,7 @@ const Database = require("better-sqlite3");
 const path = require("path");
 
 const app = express();
-const porta = 3001;
+const porta = process.env.PORT || 3001;
 
 /* Entrega para o navegador os arquivos de public/ (index.html, style.css, script.js). */
 app.use(express.static(path.join(__dirname, "public")));
